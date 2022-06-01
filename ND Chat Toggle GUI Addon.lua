@@ -62,8 +62,8 @@ local window = lib:CreateWindow("Action Toggle")
       local ChatScript = PlayerScripts ~= nil and PlayerScripts:FindFirstChild('ChatScript') or nil
       local ChatMain = ChatScript ~= nil and ChatScript:FindFirstChild('ChatMain') or nil
       
-      function Quote(text)
-      local text1 = tostring("|| "..text.." ||")
+      function Quote(text1)
+      local text1 = tostring("|| "..text1.." ||")
       return text1
       end
       
@@ -118,8 +118,8 @@ local window = lib:CreateWindow("OOC Toggle")
       local ChatScript = PlayerScripts ~= nil and PlayerScripts:FindFirstChild('ChatScript') or nil
       local ChatMain = ChatScript ~= nil and ChatScript:FindFirstChild('ChatMain') or nil
       
-      function Quote(text)
-      local text2 = tostring("["..text.."]")
+      function Quote(text2)
+      local text2 = tostring("["..text2.."]")
       return text2
       end
       
