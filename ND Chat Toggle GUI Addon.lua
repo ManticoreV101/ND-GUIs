@@ -105,8 +105,8 @@ local window = lib:CreateWindow("Action Toggle")
       local TextBox = ChatBar:GetTextBox()
       TextBox.FocusLost:Connect(Caller)
       
-      window:AddToggle("Toggle", function(t)
-      tog1 = t
+      window:AddToggle("Toggle", function(r)
+      tog1 = r
       end)
 
 
@@ -161,6 +161,6 @@ local window = lib:CreateWindow("OOC Toggle")
       local TextBox = ChatBar:GetTextBox()
       TextBox.FocusLost:Connect(Caller)
       
-      window:AddToggle("Toggle", function(t)
-      tog2 = t
+      window:AddToggle("Toggle", function(e)
+      tog2 = e
       end)
