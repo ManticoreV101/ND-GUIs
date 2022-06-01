@@ -63,8 +63,8 @@ local window = lib:CreateWindow("Action Toggle")
       local ChatMain = ChatScript ~= nil and ChatScript:FindFirstChild('ChatMain') or nil
       
       function Quote(text)
-      local text = tostring("|| "..text.." ||")
-      return text
+      local text1 = tostring("|| "..text.." ||")
+      return text1
       end
       
       local function InitialiseReplace(ChatScript)
@@ -89,14 +89,14 @@ local window = lib:CreateWindow("Action Toggle")
       
       local tog1 = false
       
-      local bool = false
+      local bool1 = false
       function Caller()
-      if bool == true then return end
+      if bool1 == true then return end
       if tog1 then
-      bool = true
+      bool1 = true
       InitialiseReplace(ChatScript)
       wait()
-      bool = false
+      bool1 = false
       end
       end
       
@@ -119,8 +119,8 @@ local window = lib:CreateWindow("OOC Toggle")
       local ChatMain = ChatScript ~= nil and ChatScript:FindFirstChild('ChatMain') or nil
       
       function Quote(text)
-      local text = tostring("["..text.."]")
-      return text
+      local text2 = tostring("["..text.."]")
+      return text2
       end
       
       local function InitialiseReplace(ChatScript)
@@ -145,14 +145,14 @@ local window = lib:CreateWindow("OOC Toggle")
       
       local tog2 = false
       
-      local bool = false
+      local bool2 = false
       function Caller()
-      if bool == true then return end
+      if bool2 == true then return end
       if tog2 then
-      bool = true
+      bool2 = true
       InitialiseReplace(ChatScript)
       wait()
-      bool = false
+      bool2 = false
       end
       end
       
