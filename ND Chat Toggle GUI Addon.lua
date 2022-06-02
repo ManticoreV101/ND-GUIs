@@ -49,7 +49,6 @@ return Checker
 end
 
 function Caller()
-game:GetService("StarterGui"):SetCore("DevConsoleVisible",true)
 InitialiseReplace(ChatScript)
 end
 
