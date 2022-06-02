@@ -1,4 +1,3 @@
-
 local lib = loadstring(game:HttpGet"https://fluxteam.xyz/external-files/lib.lua")()
 local window = lib:CreateWindow('Chat Utility')
 
@@ -39,10 +38,12 @@ TextBox:GetPropertyChangedSignal("Text"):Connect(function()
     end)
 
 local Checker = coroutine.create(function()
+    if TextBox.Text ~= "" or TextBox.Text ~= nil then
     local ImprovedText = Mode(TextBox.Text)
     print(ImprovedText,"Text")
     TextBox.Text = ImprovedText
     PreviousText = ImprovedText
+    end
     end)
 coroutine.resume(Checker)
 return Checker
@@ -58,13 +59,13 @@ local TextBox = ChatBar:GetTextBox()
 TextBox.FocusLost:Connect(Caller)
 
 window:AddToggle("Speech", function(t)
-Quote = t
-end)
+    Quote = t
+    end)
 
 window:AddToggle("Action", function(t)
-Line = t
-end)
+    Line = t
+    end)
 
 window:AddToggle("OOC", function(t)
-Square = t
-end)
+    Square = t
+    end)
