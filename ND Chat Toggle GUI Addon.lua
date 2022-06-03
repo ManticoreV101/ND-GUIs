@@ -17,11 +17,11 @@ local text = tostring("` `"..text.."` `")
 return text
 end
 if Line then
-local text = tostring('|| '..text..' ||')
+local text = tostring('|◆| '..text..' |◆|')
 return text
 end
 if Square then
-local text = tostring('['..text..']')
+local text = tostring('〈['..text..']〉')
 return text
 end
 end
