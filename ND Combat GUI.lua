@@ -1068,28 +1068,7 @@ window:AddButton("Catch and Sweep Leg",function()
 
 
 local window = lib:CreateWindow("Self-Defense")
- 
 
-window:AddButton("Turn",function()
-      
-      
-      local args = {
-          [1] = "I'd swiftly turn around, glaring at them",
-          [2] = "All"
-      }
-      
-      game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-      end)
-window:AddButton("Grab",function()
-      
-      
-      local args = {
-          [1] = "I'd grip their arm gently",
-          [2] = "All"
-      }
-      
-      game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-      end)
 window:AddButton("Throw Over Shoulder",function()
       
       local args = {
