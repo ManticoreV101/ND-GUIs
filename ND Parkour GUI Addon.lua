@@ -1,4 +1,5 @@
 local lib = loadstring(game:HttpGet"https://fluxteam.xyz/external-files/lib.lua")()
+local window = lib:CreateWindow("Parkour")
 window:AddButton("Vault Over Counter",function()
       
     local args = {
