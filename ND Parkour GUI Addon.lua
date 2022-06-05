@@ -39,7 +39,7 @@ window:AddButton("Vault Over Ledge",function()
 window:AddButton("Jump Off Ledge",function()
       
                     local args = {
-                        [1] = "I now jump off the ledge, sending into the air",
+                        [1] = "I now jump off the ledge, sending myself into the air",
                         [2] = "All"
                     }
                     
