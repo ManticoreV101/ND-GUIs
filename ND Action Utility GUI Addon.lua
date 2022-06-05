@@ -1,4 +1,5 @@
 local lib = loadstring(game:HttpGet"https://fluxteam.xyz/external-files/lib.lua")()
+local window = lib:CreateWindow("Action Utility")
 window:AddButton("Walk To Place",function()
       
     local args = {
