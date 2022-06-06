@@ -4,37 +4,37 @@ sGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 sGui.Name = math.random(1, 99999999)
 local uis = game:GetService("UserInputService")
 local lib = {
-    windows = 0;
+    windows = 0
 }
 local Mouse = game.Players.LocalPlayer:GetMouse()
 
 lib.Options = {
-    TextColor = Color3.fromRGB(255,255,255),
-    Color1 = Color3.fromRGB(40,40,40),
+    TextColor = Color3.fromRGB(255, 255, 255),
+    Color1 = Color3.fromRGB(40, 40, 40),
     togON = Color3.fromRGB(47, 211, 47),
-    togOFF = Color3.fromRGB(211, 47, 47);
+    togOFF = Color3.fromRGB(211, 47, 47)
 }
 
 local function getNextWindowPos()
-	local biggest = 0;
-	local ok = nil;
-	for i,v in pairs(sGui:GetChildren()) do
-		if v.Position.X.Offset>biggest then
-			biggest = v.Position.X.Offset
-			ok = v;
-		end
-	end
-	if biggest == 0 then
-		biggest = biggest + 5;
-	else
-		biggest = biggest + ok.Size.X.Offset + 5;
-	end
-	
-	return biggest;
+    local biggest = 0
+    local ok = nil
+    for i, v in pairs(sGui:GetChildren()) do
+        if v.Position.X.Offset > biggest then
+            biggest = v.Position.X.Offset
+            ok = v
+        end
+    end
+    if biggest == 0 then
+        biggest = biggest + 5
+    else
+        biggest = biggest + ok.Size.X.Offset + 5
+    end
+
+    return biggest
 end
 
 function lib:CreateWindow(title)
-    lib.windows = lib.windows + 1;
+    lib.windows = lib.windows + 1
     local Top = Instance.new("Frame", sGui)
     local Body = Instance.new("Frame")
     local Title = Instance.new("TextLabel")
@@ -45,8 +45,8 @@ function lib:CreateWindow(title)
     padding.PaddingLeft = UDim.new(0, 5)
     padding.PaddingRight = UDim.new(0, 5)
     padding.PaddingTop = UDim.new(0, 5)
-    local instances = 0;
-    local dragging = false;
+    local instances = 0
+    local dragging = false
     Top.Name = title
     Top.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
     Top.BorderSizePixel = 0
@@ -54,36 +54,53 @@ function lib:CreateWindow(title)
     Top.Size = UDim2.new(0, 175, 0, 35)
     Top.Position = UDim2.new(0, getNextWindowPos() + 10, 0, 10)
     local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	local function update(input)
-		local delta = input.Position - dragStart
-		Top:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), "Out", "Sine", 0.05, true)
-	end
-	Top.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = Top.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	Top.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	uis.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-    end)
+    local dragInput
+    local dragStart
+    local startPos
+    local function update(input)
+        local delta = input.Position - dragStart
+        Top:TweenPosition(
+            UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y),
+            "Out",
+            "Sine",
+            0.05,
+            true
+        )
+    end
+    Top.InputBegan:Connect(
+        function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                dragging = true
+                dragStart = input.Position
+                startPos = Top.Position
+
+                input.Changed:Connect(
+                    function()
+                        if input.UserInputState == Enum.UserInputState.End then
+                            dragging = false
+                        end
+                    end
+                )
+            end
+        end
+    )
+    Top.InputChanged:Connect(
+        function(input)
+            if
+                input.UserInputType == Enum.UserInputType.MouseMovement or
+                    input.UserInputType == Enum.UserInputType.Touch
+             then
+                dragInput = input
+            end
+        end
+    )
+    uis.InputChanged:Connect(
+        function(input)
+            if input == dragInput and dragging then
+                update(input)
+            end
+        end
+    )
     Body.Name = "Body"
     Body.Parent = Top
     Body.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
@@ -91,7 +108,7 @@ function lib:CreateWindow(title)
     Body.Position = UDim2.new(0, 0, 1, 0)
     Body.ClipsDescendants = false
     Body.Size = UDim2.new(1, 0, 0, 5)
-    
+
     Title.Name = "Title"
     Title.Parent = Top
     Title.BackgroundTransparency = 1
@@ -110,32 +127,40 @@ function lib:CreateWindow(title)
     Hide.Image = "rbxassetid://4726772330"
     Hide.Rotation = 90
     Body.ClipsDescendants = true
-    local pp;
+    local pp
     --local origsize;
-    local open = true;
-    Hide.MouseButton1Click:Connect(function()
-        open = not open
-        local a = game:GetService("TweenService"):Create(Hide, TweenInfo.new(0.2), {Rotation = (open and 90 or 0)})
-        a:Play()
-        local y = 0;
+    local open = true
+    Hide.MouseButton1Click:Connect(
+        function()
+            open = not open
+            local a = game:GetService("TweenService"):Create(Hide, TweenInfo.new(0.2), {Rotation = (open and 90 or 0)})
+            a:Play()
+            local y = 0
+            for i, v in next, Body:GetChildren() do
+                if (not v:IsA("UIListLayout")) and (not v:IsA("UIPadding")) then
+                    y = y + v.AbsoluteSize.Y
+                end
+            end
+            Body:TweenSize(
+                open and UDim2.new(1, 0, 0, y + (5 * instances) + 5) or UDim2.new(1, 0, 0, 0),
+                "Out",
+                "Sine",
+                0.2,
+                true
+            )
+        end
+    )
+    local aaa = {}
+
+    function aaa:Size()
+        local y = 0
         for i, v in next, Body:GetChildren() do
-            if (not v:IsA('UIListLayout')) and (not v:IsA("UIPadding")) then
-                y = y + v.AbsoluteSize.Y;
+            if (not v:IsA("UIListLayout")) and (not v:IsA("UIPadding")) then
+                y = y + v.AbsoluteSize.Y
             end
         end
-        Body:TweenSize(open and UDim2.new(1, 0, 0, y+(5 * instances)+5) or UDim2.new(1, 0, 0, 0), "Out", "Sine", 0.2, true)
-    end)
-    local aaa = {}
-    
-    function aaa:Size()
-        local y = 0;
-        for i, v in next, Body:GetChildren() do
-            if (not v:IsA('UIListLayout')) and(not v:IsA("UIPadding")) then
-                y = y + v.AbsoluteSize.Y;
-            end
-        end 
-        Body.Size = UDim2.new(1, 0, 0, y+(5 * instances)+5)
-        pp = y;
+        Body.Size = UDim2.new(1, 0, 0, y + (5 * instances) + 5)
+        pp = y
     end
 
     function aaa:AddButton(title, callback)
@@ -163,45 +188,62 @@ function lib:CreateWindow(title)
         a.ClipsDescendants = true
         a.SliceCenter = Rect.new(100, 100, 100, 100)
         a.SliceScale = 0.05
-        callback = callback or function() end
+        callback = callback or function()
+            end
         self:Size()
         Button.MouseButton1Click:Connect(callback)
-        
-        Button.MouseEnter:Connect(function()
-            a.ImageTransparency = 0.1;    
-        end)
-        Button.MouseLeave:Connect(function()
-            a.ImageTransparency = 0;    
-        end)
-        Button.MouseButton1Down:Connect(function()
-            --[[a.ImageTransparency = 0.3
+
+        Button.MouseEnter:Connect(
+            function()
+                a.ImageTransparency = 0.1
+            end
+        )
+        Button.MouseLeave:Connect(
+            function()
+                a.ImageTransparency = 0
+            end
+        )
+        Button.MouseButton1Down:Connect(
+            function()
+                --[[a.ImageTransparency = 0.3
             wait()
             a.ImageTransparency = 0]]
-            local c = Instance.new("ImageLabel", a)
-            c.BackgroundTransparency = 1
-            c.Image = "rbxassetid://3570695787"
-            c.ImageTransparency = 0.6
-            c.Position = UDim2.new(0, (Mouse.X - c.AbsolutePosition.X), 0, (Mouse.Y - c.AbsolutePosition.Y))
-            c.ScaleType = "Slice"
-            c.SliceCenter = Rect.new(100, 100, 100, 100)
-            c.SliceScale = 1
-            local Size = 0
-            if a.AbsoluteSize.X > a.AbsoluteSize.Y then
-                Size = a.AbsoluteSize.X*1.5
-            elseif a.AbsoluteSize.X < a.AbsoluteSize.Y then
-                Size = a.AbsoluteSize.Y*1.5
-            elseif a.AbsoluteSize.X == a.AbsoluteSize.Y then
-                Size = a.AbsoluteSize.X*1.5
-            end
-            c:TweenSizeAndPosition(UDim2.new(0, Size, 0, Size), UDim2.new(.5, -Size/2, .5, -Size/2), "Out", "Linear", .5)
-            Button.MouseButton1Up:Connect(function()
-                while c.ImageTransparency ~= 1 do
-                    wait()
-                    c.ImageTransparency = c.ImageTransparency + 0.02
-                    if c.ImageTransparency == 1 then c:Destroy() end
+                local c = Instance.new("ImageLabel", a)
+                c.BackgroundTransparency = 1
+                c.Image = "rbxassetid://3570695787"
+                c.ImageTransparency = 0.6
+                c.Position = UDim2.new(0, (Mouse.X - c.AbsolutePosition.X), 0, (Mouse.Y - c.AbsolutePosition.Y))
+                c.ScaleType = "Slice"
+                c.SliceCenter = Rect.new(100, 100, 100, 100)
+                c.SliceScale = 1
+                local Size = 0
+                if a.AbsoluteSize.X > a.AbsoluteSize.Y then
+                    Size = a.AbsoluteSize.X * 1.5
+                elseif a.AbsoluteSize.X < a.AbsoluteSize.Y then
+                    Size = a.AbsoluteSize.Y * 1.5
+                elseif a.AbsoluteSize.X == a.AbsoluteSize.Y then
+                    Size = a.AbsoluteSize.X * 1.5
                 end
-            end)
-        end)
+                c:TweenSizeAndPosition(
+                    UDim2.new(0, Size, 0, Size),
+                    UDim2.new(.5, -Size / 2, .5, -Size / 2),
+                    "Out",
+                    "Linear",
+                    .5
+                )
+                Button.MouseButton1Up:Connect(
+                    function()
+                        while c.ImageTransparency ~= 1 do
+                            wait()
+                            c.ImageTransparency = c.ImageTransparency + 0.02
+                            if c.ImageTransparency == 1 then
+                                c:Destroy()
+                            end
+                        end
+                    end
+                )
+            end
+        )
     end
 
     function aaa:AddToggle(title, callback)
@@ -242,31 +284,39 @@ function lib:CreateWindow(title)
         a.SliceCenter = Rect.new(100, 100, 100, 100)
         a.SliceScale = 0.05
         a.ImageColor3 = lib.Options.Color1
-        callback = callback or function() end
+        callback = callback or function()
+            end
         self:Size()
-        local tog = false;
-        Button.MouseButton1Click:Connect(function()
-            tog = not tog;
-            callback(tog)
-            Button.Text = (tog and utf8.char(10005) or "")
-            --a.ImageColor3 = (tog and lib.Options.togON or lib.Options.togOFF)
-            --[[local b = game:GetService("TweenService"):Create(a, TweenInfo.new(0.2), {ImageColor3 = (tog and lib.Options.togON or lib.Options.togOFF)})
+        local tog = false
+        Button.MouseButton1Click:Connect(
+            function()
+                tog = not tog
+                callback(tog)
+                Button.Text = (tog and utf8.char(10005) or "")
+                --a.ImageColor3 = (tog and lib.Options.togON or lib.Options.togOFF)
+                --[[local b = game:GetService("TweenService"):Create(a, TweenInfo.new(0.2), {ImageColor3 = (tog and lib.Options.togON or lib.Options.togOFF)})
             local c = game:GetService("TweenService"):Create(Button, TweenInfo.new(0.2), {TextTransparency = (tog and 0 or 1)})
             c:Play()
-            b:Play()]]--
-        end)
-        
-        Button.MouseEnter:Connect(function()
-            a.ImageTransparency = 0.1;    
-        end)
-        Button.MouseLeave:Connect(function()
-            a.ImageTransparency = 0;    
-        end)
+            b:Play()]]
+             --
+            end
+        )
+
+        Button.MouseEnter:Connect(
+            function()
+                a.ImageTransparency = 0.1
+            end
+        )
+        Button.MouseLeave:Connect(
+            function()
+                a.ImageTransparency = 0
+            end
+        )
     end
 
     function aaa:AddSlider(title, min, max, startPoint, callback)
         instances = instances + 1
-        local dragging = false;
+        local dragging = false
         local label = Instance.new("TextLabel")
         local sliderFrame = Instance.new("ImageLabel")
         local slidingFrame = Instance.new("ImageLabel")
@@ -291,7 +341,7 @@ function lib:CreateWindow(title)
         slidingFrame.Name = "slidingFrame"
         slidingFrame.Parent = sliderFrame
         slidingFrame.BackgroundTransparency = 1
-        slidingFrame.Position = UDim2.new((startPoint or 0)/max, -6, 0.5, -5)
+        slidingFrame.Position = UDim2.new((startPoint or 0) / max, -6, 0.5, -5)
         slidingFrame.Size = UDim2.new(0, 10, 0, 10)
         slidingFrame.Image = "rbxassetid://3570695787"
         slidingFrame.ScaleType = "Slice"
@@ -305,38 +355,51 @@ function lib:CreateWindow(title)
         val.TextColor3 = Color3.new(1, 1, 1)
         val.TextScaled = true
         val.TextTransparency = 1
-        val.Text = tostring(startPoint and math.floor((startPoint / max) * (max - min) + min) or 0).."/"..tostring(max)
+        val.Text =
+            tostring(startPoint and math.floor((startPoint / max) * (max - min) + min) or 0) .. "/" .. tostring(max)
         self:Size()
         -- Dragging Function --
-	    local function move(input)
-	        local pos = UDim2.new(math.clamp((input.Position.X - sliderFrame.AbsolutePosition.X) / sliderFrame.AbsoluteSize.X, 0, 1), -6, 0.5, -5)
-            slidingFrame:TweenPosition(pos, "Out", "Sine", 0.1, true);
+        local function move(input)
+            local pos =
+                UDim2.new(
+                math.clamp((input.Position.X - sliderFrame.AbsolutePosition.X) / sliderFrame.AbsoluteSize.X, 0, 1),
+                -6,
+                0.5,
+                -5
+            )
+            slidingFrame:TweenPosition(pos, "Out", "Sine", 0.1, true)
             local value = math.floor(((pos.X.Scale * max) / max) * (max - min) + min)
-            val.Text = tostring(value).."/"..tostring(max);
+            val.Text = tostring(value) .. "/" .. tostring(max)
             callback(value)
-	    end
-	    slidingFrame.InputBegan:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-                dragging = true;
-                local b = game:GetService("TweenService"):Create(val, TweenInfo.new(0.2), {TextTransparency = 0})
-                b:Play()
-	        end
-	    end)
-	    slidingFrame.InputEnded:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-                dragging = false;
-                wait(1)
-                local b = game:GetService("TweenService"):Create(val, TweenInfo.new(0.2), {TextTransparency = 1})
-                b:Play()
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-	            move(input)
-	        end
-	    end)
-	    -----------------------
+        end
+        slidingFrame.InputBegan:Connect(
+            function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                    dragging = true
+                    local b = game:GetService("TweenService"):Create(val, TweenInfo.new(0.2), {TextTransparency = 0})
+                    b:Play()
+                end
+            end
+        )
+        slidingFrame.InputEnded:Connect(
+            function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                    dragging = false
+                    wait(1)
+                    local b = game:GetService("TweenService"):Create(val, TweenInfo.new(0.2), {TextTransparency = 1})
+                    b:Play()
+                end
+            end
+        )
+        game:GetService("UserInputService").InputChanged:Connect(
+            function(input)
+                if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+                    move(input)
+                end
+            end
+        )
+        -----------------------
     end
     return aaa
 end
-return lib;
+return lib
