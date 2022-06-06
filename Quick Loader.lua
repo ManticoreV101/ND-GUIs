@@ -1,6 +1,5 @@
 --[[
-    made by: dak#1111
-    thanks for using!
+Removes the Roblox Loading Screen and replaces it with an optimized version
 --]]
 local function tween(...)
     game:GetService("TweenService"):Create(...):Play()
@@ -39,7 +38,7 @@ status.BackgroundTransparency = 1.000
 status.Position = UDim2.new(0, 0, 0.893442631, 0)
 status.Size = UDim2.new(1, 0, 0.0355480109, 0)
 status.Font = Enum.Font.SourceSansItalic
-status.Text = "< TRYING SERVER >"
+status.Text = "< ATTEMPTING TO JOIN SERVER >"
 status.TextColor3 = Color3.fromRGB(255, 255, 255)
 status.TextScaled = true
 status.TextSize = 14.000
@@ -53,7 +52,7 @@ end
 repeat
     wait()
 until game:GetService("Players").LocalPlayer
-status.Text = "< JOINING SERVER >"
+status.Text = "< LOADING... >"
 
 if not game:IsLoaded() then
     game.Loaded:wait()
