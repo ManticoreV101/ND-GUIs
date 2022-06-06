@@ -3,6 +3,7 @@ This is a collection of 🏙 Neon District 🏙 Utility and CRP GUIs I've made
 > - Main GUIs
 > - Addon GUIs
 > - Toggle GUIs
+> - Optimization Scripts
 
 # 💻Tech Stack
 ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
