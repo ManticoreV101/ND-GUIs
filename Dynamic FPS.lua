@@ -1,3 +1,4 @@
+--Stops rendering objects when you're tabbed out of Roblox
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 
