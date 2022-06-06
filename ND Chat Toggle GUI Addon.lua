@@ -12,45 +12,45 @@ local Line = nil
 local Square = nil
 
 function Mode(text)
-if Quote then
-local text = tostring("` `"..text.."` `")
-return text
-end
-if Line then
-local text = tostring('|◆| '..text..' |◆|')
-return text
-end
-if Square then
-local text = tostring('〈['..text..']〉')
-return text
-end
+    if Quote then
+        local text = tostring("` `"..text.."` `")
+        return text
+    end
+    if Line then
+        local text = tostring('|◆| '..text..' |◆|')
+        return text
+    end
+    if Square then
+        local text = tostring('['..text..']')
+        return text
+    end
 end
 
 local function InitialiseReplace(ChatScript)
-local ChatMain = require(ChatScript:WaitForChild("ChatMain"))
-local ChatBar = debug.getupvalue(ChatMain.FocusChatBar, 1)
-local TextBox = ChatBar:GetTextBox()
-local LastChangedText = tick()
-local PreviousText = ""
+    local ChatMain = require(ChatScript:WaitForChild("ChatMain"))
+    local ChatBar = debug.getupvalue(ChatMain.FocusChatBar, 1)
+    local TextBox = ChatBar:GetTextBox()
+    local LastChangedText = tick()
+    local PreviousText = ""
 
-TextBox:GetPropertyChangedSignal("Text"):Connect(function()
-    LastChangedText = tick()
+    TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+        LastChangedText = tick()
     end)
 
-local Checker = coroutine.create(function()
-    if TextBox.Text ~= "" or TextBox.Text ~= nil then
-    local ImprovedText = Mode(TextBox.Text)
-    print(ImprovedText,"Text")
-    TextBox.Text = ImprovedText
-    PreviousText = ImprovedText
-    end
+    local Checker = coroutine.create(function()
+        if TextBox.Text ~= "" or TextBox.Text ~= nil then
+            local ImprovedText = Mode(TextBox.Text)
+            print(ImprovedText,"Text")
+            TextBox.Text = ImprovedText
+            PreviousText = ImprovedText
+        end
     end)
-coroutine.resume(Checker)
-return Checker
+    coroutine.resume(Checker)
+    return Checker
 end
 
 function Caller()
-InitialiseReplace(ChatScript)
+    InitialiseReplace(ChatScript)
 end
 
 local ChatMains = require(ChatScript:WaitForChild("ChatMain"))
@@ -60,12 +60,12 @@ TextBox.FocusLost:Connect(Caller)
 
 window:AddToggle("Speech", function(t)
     Quote = t
-    end)
+end)
 
 window:AddToggle("Action", function(t)
     Line = t
-    end)
+end)
 
 window:AddToggle("OOC", function(t)
     Square = t
-    end)
+end)
