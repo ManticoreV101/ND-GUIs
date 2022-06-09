@@ -29,7 +29,7 @@ window:AddButton(
     "Sever Artery",
     function()
         local args = {
-            [1] = "I'd now swing my knife, which was angled towards their neck, lacerating their cartilage",
+            [1] = "I'd now swing my knife, which was angled towards your neck, lacerating your cartilage",
             [2] = "All"
         }
 
@@ -38,7 +38,7 @@ window:AddButton(
         wait(2)
 
         local args = {
-            [1] = "I'd now yank the blade back, retracting it out of their neck",
+            [1] = "I'd now yank the blade back, retracting it out of your neck",
             [2] = "All"
         }
 
@@ -47,7 +47,7 @@ window:AddButton(
         wait(2.1)
 
         local args = {
-            [1] = "I'd now jab my knife, whereas its edge was angled towards their larynx",
+            [1] = "I'd now jab my knife, whereas its edge was angled towards your larynx",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
@@ -55,7 +55,7 @@ window:AddButton(
         wait(2.3)
 
         local args = {
-            [1] = "The stab would penetrate far enough to sever their carotid artery and jugular vein",
+            [1] = "The stab would penetrate far enough to sever your carotid artery and jugular vein",
             [2] = "All"
         }
 
@@ -64,7 +64,7 @@ window:AddButton(
         wait(3)
 
         local args = {
-            [1] = "The lack of blood supply towards their brain due to their carotid artery being severed would kill them",
+            [1] = "The lack of blood supply towards your brain, due to your carotid artery being severed, would kill you",
             [2] = "All"
         }
 
@@ -84,7 +84,7 @@ window:AddButton(
     "Stab Nerve Cluster",
     function()
         local args = {
-            [1] = "I'd now jab my blade into their scalene muscles, just above the clavicle",
+            [1] = "I'd now jab my blade into your scalene muscles, just above the clavicle",
             [2] = "All"
         }
 
@@ -93,7 +93,7 @@ window:AddButton(
         wait(2)
 
         local args = {
-            [1] = "The blade would thrust into a nerve cluster, severing them",
+            [1] = "The blade would thrust into a nerve cluster, severing multiple nerves",
             [2] = "All"
         }
 
@@ -113,7 +113,7 @@ window:AddButton(
     "Stab Armpit",
     function()
         local args = {
-            [1] = "I'd now grip my blade upright again, angling the tip towards their armpit",
+            [1] = "I'd now grip my blade upright again, angling the tip towards your armpit",
             [2] = "All"
         }
 
@@ -122,7 +122,7 @@ window:AddButton(
         wait(2)
 
         local args = {
-            [1] = "I'd broaden my arm in a snapping motion, jabbing the knife's end at their armpit",
+            [1] = "I'd broaden my arm in a snapping motion, jabbing the knife's end at your armpit",
             [2] = "All"
         }
 
@@ -131,7 +131,7 @@ window:AddButton(
         wait(3)
 
         local args = {
-            [1] = "The axillary artery would be severed, crippling both their arms an fingers due to the lack of blood",
+            [1] = "The axillary artery would be severed, crippling both your arms and fingers due to the lack of blood",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
@@ -159,7 +159,7 @@ window:AddButton(
         wait(2.8)
 
         local args = {
-            [1] = "I'd now trigger the mechnanical sheathe once again, whereas the blade would retract back into my sleeve",
+            [1] = "I'd now trigger the mechanical sheathe once again, whereas the blade would retract back into my sleeve",
             [2] = "All"
         }
 
@@ -171,7 +171,7 @@ window:AddButton(
     "Unsheathe Cloak",
     function()
         local args = {
-            [1] = "I'd now place my hand underneathe my suit, gripping the handle of two blades",
+            [1] = "I'd now place my hand underneath my suit, gripping the handle of two blades",
             [2] = "All"
         }
 
@@ -180,7 +180,7 @@ window:AddButton(
         wait(2)
 
         local args = {
-            [1] = "I'd pull on the handles, unravelling the blades out of my suit",
+            [1] = "I'd pull on the handles, unraveling the blades out of my suit",
             [2] = "All"
         }
 
@@ -200,7 +200,7 @@ window:AddButton(
         wait(1.1)
 
         local args = {
-            [1] = "Aiming towards them, I'd retract my arm",
+            [1] = "Aiming towards you, I'd retract my arm",
             [2] = "All"
         }
 
@@ -220,7 +220,7 @@ window:AddButton(
         wait(2.8)
 
         local args = {
-            [1] = "Due to the nerve damage, their air circulation would cut off, concluding in them dying from hypoxia",
+            [1] = "Due to the nerve damage, your air circulation would cut off, concluding in you dying from hypoxia",
             [2] = "All"
         }
 
@@ -232,7 +232,7 @@ window:AddButton(
     "Lungs",
     function()
         local args = {
-            [1] = "The blades would pierce through their lungs, passing right through the ribcage",
+            [1] = "The blades would pierce through your lungs, passing right through the ribcage",
             [2] = "All"
         }
 
@@ -241,7 +241,7 @@ window:AddButton(
         wait(3)
 
         local args = {
-            [1] = "Due to the pulmonary haemorrhage, they would be unable to speak nor move, as they drowned in their blood",
+            [1] = "Due to the pulmonary hemorrhage, they would be unable to speak nor move, as they drowned in your blood",
             [2] = "All"
         }
 
@@ -253,7 +253,7 @@ window:AddButton(
     "Femur",
     function()
         local args = {
-            [1] = "The blades would pierce through their rectus femoris muscle",
+            [1] = "The blades would pierce through your rectus femoris muscle",
             [2] = "All"
         }
 
@@ -411,7 +411,7 @@ window:AddButton(
     "Parallel",
     function()
         local args = {
-            [1] = "I'd form the Heiko Dachi stance wherein my feet were parellel and my center of gravity was balanced",
+            [1] = "I'd form the Heiko Dachi stance wherein my feet were parallel and my center of gravity was balanced",
             [2] = "All"
         }
 
@@ -543,7 +543,7 @@ window:AddButton(
     "Death-Aim At Head",
     function()
         local args = {
-            [1] = "I'd aim at their head, with the intent to kill them",
+            [1] = "I'd aim at your head, with the intent to kill you",
             [2] = "All"
         }
 
@@ -554,7 +554,7 @@ window:AddButton(
     "Threat-Aim At Head",
     function()
         local args = {
-            [1] = "I'd aim at their head, with the intent to threaten them",
+            [1] = "I'd aim at your head, with the intent to threaten you",
             [2] = "All"
         }
 
@@ -565,7 +565,7 @@ window:AddButton(
     "Aim at Torso",
     function()
         local args = {
-            [1] = "I'd aim at their torso, ready to discharge",
+            [1] = "I'd aim at your torso, ready to discharge",
             [2] = "All"
         }
 
@@ -576,7 +576,7 @@ window:AddButton(
     "Fire Head",
     function()
         local args = {
-            [1] = "I'd fire off, the rounds went hurdling through the air",
+            [1] = "I'd fire off, the rounds went hurtling through the air",
             [2] = "All"
         }
 
@@ -585,7 +585,7 @@ window:AddButton(
         wait(2.1)
 
         local args = {
-            [1] = "The rounds would burst through their skull, dragging skull fragments along with it",
+            [1] = "The rounds would burst through your skull, dragging skull fragments along with it",
             [2] = "All"
         }
 
@@ -662,7 +662,7 @@ window:AddButton(
     "Discombobulate",
     function()
         local args = {
-            [1] = "I'd perform a dual knife-hand strike to both sides of their neck, striking the nerve clusters, and discombobulating them",
+            [1] = "I'd perform a dual knife-hand strike to both sides of your neck, striking the nerve clusters, and discombobulating you",
             [2] = "All"
         }
 
@@ -673,7 +673,7 @@ window:AddButton(
     "Elbow Jaw",
     function()
         local args = {
-            [1] = "I'd elbow the right side of their jaw, fracturing it",
+            [1] = "I'd elbow the right side of your jaw, fracturing it",
             [2] = "All"
         }
 
@@ -684,7 +684,7 @@ window:AddButton(
     "Hammer Fist",
     function()
         local args = {
-            [1] = "I'd hurl an upwards hammer fist to their chin, exposing their throat",
+            [1] = "I'd hurl an upwards hammer fist to your chin, exposing your throat",
             [2] = "All"
         }
 
@@ -695,7 +695,7 @@ window:AddButton(
     "Damage Windpipe",
     function()
         local args = {
-            [1] = "I'd drive my fist into their throat, damaging their windpipe",
+            [1] = "I'd drive my fist into your throat, damaging your windpipe",
             [2] = "All"
         }
 
@@ -713,7 +713,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(1.2)
         local args = {
-            [1] = "I'd whirl my fist into their upper abdomen",
+            [1] = "I'd whirl my fist into your upper abdomen",
             [2] = "All"
         }
 
@@ -727,7 +727,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.2)
         local args = {
-            [1] = "The blow would make contact, colliding with their upper abdomen, traumatizing their solar plexus",
+            [1] = "The blow would make contact, colliding with your upper abdomen, traumatizing your solar plexus",
             [2] = "All"
         }
 
@@ -738,7 +738,7 @@ window:AddButton(
     "Double-Fist Strike",
     function()
         local args = {
-            [1] = "I'd perform a double-fist strike against their chest, making them tumble back",
+            [1] = "I'd perform a double-fist strike against your chest, making you tumble back",
             [2] = "All"
         }
 
@@ -749,7 +749,7 @@ window:AddButton(
     "Spinning Back-Fist",
     function()
         local args = {
-            [1] = "I'd perform a spinning back-fist to their face, rupturing their cheek",
+            [1] = "I'd perform a spinning back-fist to your face, rupturing your cheek",
             [2] = "All"
         }
 
@@ -760,7 +760,7 @@ window:AddButton(
     "Fracture Ribs",
     function()
         local args = {
-            [1] = "I'd knee the side of their abdomen, fracturing their ribs",
+            [1] = "I'd knee the side of your abdomen, fracturing your ribs",
             [2] = "All"
         }
 
@@ -771,7 +771,7 @@ window:AddButton(
     "Shatter Ribs",
     function()
         local args = {
-            [1] = "I'd perform a back-fist to the side of their abdomen, shattering their fractured ribs",
+            [1] = "I'd perform a back-fist to the side of your abdomen, shattering your fractured ribs",
             [2] = "All"
         }
 
@@ -782,7 +782,7 @@ window:AddButton(
     "Paralyze Arms",
     function()
         local args = {
-            [1] = "I'd perform a back-fist to their collarbone, leaving both arms paralyzed",
+            [1] = "I'd perform a back-fist to your collarbone, leaving both arms paralyzed",
             [2] = "All"
         }
 
@@ -794,7 +794,7 @@ window:AddButton(
     "Bash Face Into Knee",
     function()
         local args = {
-            [1] = "I'd grab their head, bashing it onto my knee, smashing their face in",
+            [1] = "I'd grab your head, bashing it onto my knee, smashing your face in",
             [2] = "All"
         }
 
@@ -805,7 +805,7 @@ window:AddButton(
     "Clap Ears",
     function()
         local args = {
-            [1] = "I'd clap their ears, incapacitating them",
+            [1] = "I'd clap your ears, incapacitating you",
             [2] = "All"
         }
 
@@ -816,7 +816,7 @@ window:AddButton(
     "Strike Temple",
     function()
         local args = {
-            [1] = "I'd strike their temple with my fist, stunning them",
+            [1] = "I'd strike your temple with my fist, stunning you",
             [2] = "All"
         }
 
@@ -827,7 +827,7 @@ window:AddButton(
     "Plunge Fingers Into Eyes",
     function()
         local args = {
-            [1] = "I'd plunge my fingers into their eyes, impaling them inside the occipital cavity",
+            [1] = "I'd plunge my fingers into your eyes, impaling you inside the occipital cavity",
             [2] = "All"
         }
 
@@ -838,7 +838,7 @@ window:AddButton(
     "Rip Eyes Out",
     function()
         local args = {
-            [1] = "I'd rip their eyes out of their eyesockets",
+            [1] = "I'd rip your eyes out of your eyesockets",
             [2] = "All"
         }
 
@@ -849,20 +849,20 @@ window:AddButton(
     "Chokehold",
     function()
         local args = {
-            [1] = "I'd lunge around them, sending myself on their back",
+            [1] = "I'd lunge around you, sending myself on your back",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(1.9)
         local args = {
-            [1] = "I'd wrap my arm around their neck, clamping on it tightly",
+            [1] = "I'd wrap my arm around your neck, clamping on it tightly",
             [2] = "All"
         }
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(1.9)
         local args = {
-            [1] = "I'd knee their femur ligament region, forcing them to kneel down",
+            [1] = "I'd knee your femur ligament region, forcing you to kneel",
             [2] = "All"
         }
 
@@ -876,7 +876,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
         local args = {
-            [1] = "Their blood flow would cut off, causing them to suffer cerebral ischemia, ineluctably making them black out",
+            [1] = "Their blood flow would cut off, causing you to suffer cerebral ischemia, ineluctably making you black out",
             [2] = "All"
         }
 
@@ -887,7 +887,7 @@ window:AddButton(
     "Open Palm Into Nose",
     function()
         local args = {
-            [1] = "I'd drive my open palm into their nose, crushing their nasal bone and transfixing their brain",
+            [1] = "I'd drive my open palm into your nose, crushing your nasal bone and transfixing your brain",
             [2] = "All"
         }
 
@@ -898,7 +898,7 @@ window:AddButton(
     "Brachial Plexus",
     function()
         local args = {
-            [1] = "I'd whip my open hand into their brachial plexus, knocking them out due to sensory overload",
+            [1] = "I'd whip my open hand into your brachial plexus, knocking you out due to sensory overload",
             [2] = "All"
         }
 
@@ -912,7 +912,7 @@ window:AddButton(
     "Roundhouse Kick",
     function()
         local args = {
-            [1] = "I'd perform a roundhouse kick, hitting their cheek, and stunning them due to the sheer impact",
+            [1] = "I'd perform a roundhouse kick, hitting your cheek, and stunning you due to the sheer impact",
             [2] = "All"
         }
 
@@ -923,7 +923,7 @@ window:AddButton(
     "Horse Kick",
     function()
         local args = {
-            [1] = "I'd perform a horse kick into their abdomen, causing immense pain in their stomach",
+            [1] = "I'd perform a horse kick into your abdomen, causing immense pain in your stomach",
             [2] = "All"
         }
 
@@ -934,7 +934,7 @@ window:AddButton(
     "Axe Kick",
     function()
         local args = {
-            [1] = "I'd perform an axe kick towards their shoulder, immobilizing their arm",
+            [1] = "I'd perform an ax kick towards your shoulder, immobilizing your arm",
             [2] = "All"
         }
 
@@ -945,7 +945,7 @@ window:AddButton(
     "Crescent Kick",
     function()
         local args = {
-            [1] = "I'd perform a cresent kick, striking their earlobe and cheek",
+            [1] = "I'd perform a crescent kick, striking your earlobe and cheek",
             [2] = "All"
         }
 
@@ -956,7 +956,7 @@ window:AddButton(
     "Front Hook Kick",
     function()
         local args = {
-            [1] = "I'd perform a front hook kick, striking their chin and cheek, making them tumble rearwards",
+            [1] = "I'd perform a front hook kick, striking your chin and cheek, making you tumble rearwards",
             [2] = "All"
         }
 
@@ -967,7 +967,7 @@ window:AddButton(
     "Double Dropkick",
     function()
         local args = {
-            [1] = "I'd charge up towards them, performing a double dropkick",
+            [1] = "I'd charge up towards you, performing a double dropkick",
             [2] = "All"
         }
 
@@ -981,7 +981,7 @@ window:AddButton(
     "Break Helmet",
     function()
         local args = {
-            [1] = "I'd slam their face into the ground repeatedly, breaking their helmet",
+            [1] = "I'd slam your face into the ground repeatedly, breaking your helmet",
             [2] = "All"
         }
 
@@ -992,7 +992,7 @@ window:AddButton(
     "Break Mask",
     function()
         local args = {
-            [1] = "I'd slam their face into the ground repeatedly, breaking their mask",
+            [1] = "I'd slam your face into the ground repeatedly, breaking your mask",
             [2] = "All"
         }
 
@@ -1003,7 +1003,7 @@ window:AddButton(
     "Break Visor",
     function()
         local args = {
-            [1] = "I'd slam their face into the ground repeatedly, breaking their visor",
+            [1] = "I'd slam your face into the ground repeatedly, breaking your visor",
             [2] = "All"
         }
 
@@ -1014,14 +1014,14 @@ window:AddButton(
     "Break Face",
     function()
         local args = {
-            [1] = "I'd grab the back of their head, gripping their hair rigidly",
+            [1] = "I'd grab the back of your head, gripping your hair rigidly",
             [2] = "All"
         }
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.8)
         local args = {
-            [1] = "I'd slam their face into the ground perpetually, breaking their nasal perceiver, and bruising their face",
+            [1] = "I'd slam your face into the ground perpetually, breaking your nasal perceiver, and bruising your face",
             [2] = "All"
         }
 
@@ -1032,7 +1032,7 @@ window:AddButton(
     "Slam Against Wall",
     function()
         local args = {
-            [1] = "I'd slam them against the wall, forcing the air out of their lungs, and disorienting them",
+            [1] = "I'd slam you against the wall, forcing the air out of your lungs, and disorienting you",
             [2] = "All"
         }
 
@@ -1043,7 +1043,7 @@ window:AddButton(
     "Slam Against Counter",
     function()
         local args = {
-            [1] = "I'd slam them against the counter, leaving a bruise on their torso due to the edge of the counter",
+            [1] = "I'd slam you against the counter, leaving a bruise on your torso due to the edge of the counter",
             [2] = "All"
         }
 
@@ -1054,7 +1054,7 @@ window:AddButton(
     "Slam Against Pillar",
     function()
         local args = {
-            [1] = "I'd slam them against the pillar, forcing air out of their lungs, and dazing them",
+            [1] = "I'd slam you against the pillar, forcing air out of your lungs, and dazing you",
             [2] = "All"
         }
 
@@ -1065,14 +1065,14 @@ window:AddButton(
     "Smash Face Into Wall",
     function()
         local args = {
-            [1] = "I'd grasp their hair, clenching it firmly",
+            [1] = "I'd grasp your hair, clenching it firmly",
             [2] = "All"
         }
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(0.9)
         local args = {
-            [1] = "I'd smash their face into the wall, bruising their cheek, and fracturing their nasal bone",
+            [1] = "I'd smash your face into the wall, bruising your cheek, and fracturing your nasal bone",
             [2] = "All"
         }
 
@@ -1083,7 +1083,7 @@ window:AddButton(
     "Dodge",
     function()
         local args = {
-            [1] = "I'd step aside as to dodge, rendering their move innefective",
+            [1] = "I'd step aside as to dodge, rendering your move innefective",
             [2] = "All"
         }
 
@@ -1094,7 +1094,7 @@ window:AddButton(
     "Catch and Twist Arm",
     function()
         local args = {
-            [1] = "I'd seize their arm, locking it in my grip",
+            [1] = "I'd seize your arm, locking it in my grip",
             [2] = "All"
         }
 
@@ -1103,7 +1103,7 @@ window:AddButton(
         wait(1.5)
 
         local args = {
-            [1] = "I'd jab the nerve cluster in their neck with the bottom of my hand",
+            [1] = "I'd jab the nerve cluster in your neck with the bottom of my hand",
             [2] = "All"
         }
 
@@ -1112,7 +1112,7 @@ window:AddButton(
         wait(1.5)
 
         local args = {
-            [1] = "I'd swivel their arm, resulting in their body slamming into the ground",
+            [1] = "I'd swivel your arm, resulting in your body slamming into the ground",
             [2] = "All"
         }
 
@@ -1123,7 +1123,7 @@ window:AddButton(
     "Catch and Sweep Leg",
     function()
         local args = {
-            [1] = "I'd snatch their leg, in which it was latched in between my arm and torso",
+            [1] = "I'd snatch your leg, in which it was latched in between my arm and torso",
             [2] = "All"
         }
 
@@ -1132,7 +1132,7 @@ window:AddButton(
         wait(1.5)
 
         local args = {
-            [1] = "I'd sweep their other leg, resulting in them falling to the ground",
+            [1] = "I'd sweep your other leg, resulting in you falling to the ground",
             [2] = "All"
         }
 
@@ -1146,25 +1146,25 @@ window:AddButton(
     "Throw Over Shoulder",
     function()
         local args = {
-            [1] = "I'd grip them by their forearm firmly",
+            [1] = "I'd grip you by your forearm firmly",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.8)
         local args = {
-            [1] = "I'd move into a stance where their torso was on my back, and their arm over my shoulder",
+            [1] = "I'd move into a stance where your torso was on my back, and your arm over my shoulder",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.8)
         local args = {
-            [1] = "Utilizing their arm as a lever, and my back as the center of gravity, I'd throw them over my shoulder",
+            [1] = "Utilizing your arm as a lever, and my back as the center of gravity, I'd throw you over my shoulder",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.1)
         local args = {
-            [1] = "They would slam into the ground, breaking a portion of their thoracic vertebrae",
+            [1] = "They would slam into the ground, breaking a portion of your thoracic vertebrae",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
@@ -1174,7 +1174,7 @@ window:AddButton(
     "Disarm Gun",
     function()
         local args = {
-            [1] = "I'd convolute their wrist, precluding them from aiming their gun towards me",
+            [1] = "I'd convolute your wrist, precluding you from aiming your gun towards me",
             [2] = "All"
         }
 
@@ -1182,7 +1182,7 @@ window:AddButton(
 
         wait(2.6)
         local args = {
-            [1] = "I'd knee their elbow, breaking their grip on the gun, and thus, disarming them",
+            [1] = "I'd knee your elbow, breaking your grip on the gun, and thus, disarming you",
             [2] = "All"
         }
 
@@ -1193,7 +1193,7 @@ window:AddButton(
     "Disarm Weapon",
     function()
         local args = {
-            [1] = "I'd swivel their arm, forcing to loosen their grip",
+            [1] = "I'd swivel your arm, forcing to loosen your grip",
             [2] = "All"
         }
 
@@ -1201,7 +1201,7 @@ window:AddButton(
 
         wait(3.2)
         local args = {
-            [1] = "I'd lash at their elbow, slugging their chest with my other hand, resulting in them dropping their weapon",
+            [1] = "I'd lash at your elbow, slugging your chest with my other hand, resulting in you dropping your weapon",
             [2] = "All"
         }
 
@@ -1223,7 +1223,7 @@ window:AddButton(
     "Hoist",
     function()
         local args = {
-            [1] = "I'd hoist them over my shoulder, efficaciously carrying them",
+            [1] = "I'd hoist you over my shoulder, efficaciously carrying you",
             [2] = "All"
         }
 
@@ -1234,7 +1234,7 @@ window:AddButton(
     "Tackle",
     function()
         local args = {
-            [1] = "I'd charge over to them with my arms open, intending to tackle them",
+            [1] = "I'd charge over to you with my arms open, intending to tackle you",
             [2] = "All"
         }
 
@@ -1242,7 +1242,7 @@ window:AddButton(
         wait(2.6)
 
         local args = {
-            [1] = "Once I was within grappling range, I'd grip their leg, making them tumble over",
+            [1] = "Once I was within grappling range, I'd grip your leg, making you tumble over",
             [2] = "All"
         }
 
@@ -1253,7 +1253,7 @@ window:AddButton(
     "Pin Down",
     function()
         local args = {
-            [1] = "I'd pin them down to the ground, placing my weight over them",
+            [1] = "I'd pin you down to the ground, placing my weight over you",
             [2] = "All"
         }
 
@@ -1264,7 +1264,7 @@ window:AddButton(
     "Restrain",
     function()
         local args = {
-            [1] = "I'd restrain them, as to hinder them from getting up",
+            [1] = "I'd restrain you, as to hinder you from getting up",
             [2] = "All"
         }
 
@@ -1272,7 +1272,7 @@ window:AddButton(
         wait(1.8)
 
         local args = {
-            [1] = "I'd place my knee over their legs, pushing down firmly",
+            [1] = "I'd place my knee over your legs, pushing down firmly",
             [2] = "All"
         }
 
@@ -1280,7 +1280,7 @@ window:AddButton(
         wait(1.8)
 
         local args = {
-            [1] = "I'd grip their wrists with my hand rigidly, pushing it down across their waist",
+            [1] = "I'd grip your wrists with my hand rigidly, pushing it down across your waist",
             [2] = "All"
         }
 
