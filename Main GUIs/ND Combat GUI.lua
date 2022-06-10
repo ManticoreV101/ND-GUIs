@@ -1,7 +1,4 @@
 local lib = loadstring(game:HttpGet "https://fluxteam.xyz/external-files/lib.lua")()
-local Players = game:GetService("Players")
-local Animate = Players.LocalPlayer.Character.Animate
---Melee Combat
 local window = lib:CreateWindow("Melee Combat")
 
 window:AddButton(
@@ -274,6 +271,8 @@ local window = lib:CreateWindow("Suit Control")
 window:AddButton(
     "Animation",
     function()
+ local Players = game:GetService("Players")
+ local Animate = Players.LocalPlayer.Character.Animate
         Animate.idle.Animation1.AnimationId = "rbxassetid://5319828216"
         Animate.idle.Animation2.AnimationId = "rbxassetid://5319831086"
         Animate.run.RunAnim.AnimationId = "rbxassetid://5319844329"
