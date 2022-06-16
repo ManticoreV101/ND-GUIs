@@ -143,7 +143,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
         local args = {
-            [1] = "I'd activate the device in my pocket
+            [1] = "I'd activate the device in my pocket",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
