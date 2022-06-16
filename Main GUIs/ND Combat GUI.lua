@@ -568,7 +568,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
-            [1] = "I'd clutch on the textured grip of my LI Breaker",
+            [1] = "I'd clutch on the textured grip of my Lazarus Int. Breaker",
             [2] = "All"
         }
 
@@ -582,7 +582,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
-            [1] = "I'd now pull on the handle, revealing the LI Breaker",
+            [1] = "I'd now pull on the handle, revealing the Lazarus Int. Breaker",
             [2] = "All"
         }
 
@@ -652,7 +652,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(1)
         local args = {
-            [1] = "I'd slide the LI Breaker into the corresponding area on my suit",
+            [1] = "I'd slide the Lazarus Int. Breaker into the corresponding area on my suit",
             [2] = "All"
         }
 
@@ -670,7 +670,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
-            [1] = "I'd clutch on the contoured grip of my LI Baroness",
+            [1] = "I'd clutch on the contoured grip of my Lazarus Int. Baroness",
             [2] = "All"
         }
 
@@ -684,7 +684,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
-            [1] = "I'd now pull on the handle, exposing the LI Baroness",
+            [1] = "I'd now pull on the handle, exposing the Lazarus Int. Baroness",
             [2] = "All"
         }
 
@@ -702,7 +702,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(3)
         local args = {
-            [1] = "I'd now ram the muzzle of the LI Baroness into your neck",
+            [1] = "I'd now ram the muzzle of the Lazarus Int. Baroness into your neck",
             [2] = "All"
         }
        
@@ -741,7 +741,7 @@ window:AddButton(
     "Holster LI Baroness",
     function()
         local args = {
-            [1] = "I'd now switch the safety of the LI Baroness on once more",
+            [1] = "I'd now switch the safety of the Lazarus Int. Baroness on once more",
             [2] = "All"
         }
 
@@ -766,7 +766,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
-            [1] = "I'd clutch on the contoured grip of my LI Baron",
+            [1] = "I'd clutch on the contoured grip of my Lazarus Int. Baron",
             [2] = "All"
         }
 
@@ -780,7 +780,7 @@ window:AddButton(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
-            [1] = "I'd now pull on the handle, exposing the LI Baron",
+            [1] = "I'd now pull on the handle, exposing the Lazarus Int. Baron",
             [2] = "All"
         }
 
@@ -837,7 +837,7 @@ window:AddButton(
     "Holster LI Baron",
     function()
         local args = {
-            [1] = "I'd now switch the safety of the LI Baron on once more",
+            [1] = "I'd now switch the safety of the Lazarus Int. Baron on once more",
             [2] = "All"
         }
 
