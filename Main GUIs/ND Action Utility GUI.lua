@@ -15,7 +15,7 @@ window:AddButton(
     "Walk To Person",
     function()
         local args = {
-            [1] = "I now advance towards them, reinvigorating my posture as I approach them",
+            [1] = "I now advance towards them, reinvigorating my equanimity as I approach them",
             [2] = "All"
         }
 
@@ -26,7 +26,7 @@ window:AddButton(
     "Gaze",
     function()
         local args = {
-            [1] = "I now lock my gaze onto them",
+            [1] = "I now lock my gaze onto them, remaining phlegmatic",
             [2] = "All"
         }
 
@@ -37,7 +37,7 @@ window:AddButton(
     "Turn",
     function()
         local args = {
-            [1] = "I'd swiftly turn around, glaring at them",
+            [1] = "I'd swiftly turn around, glaring at them equanimously",
             [2] = "All"
         }
 
@@ -59,7 +59,7 @@ window:AddButton(
     "Seat",
     function()
         local args = {
-            [1] = "I now settle on the chair, seating myself",
+            [1] = "I now take a seat, alleviating myself",
             [2] = "All"
         }
 
@@ -70,7 +70,7 @@ window:AddButton(
     "Unseat",
     function()
         local args = {
-            [1] = "I now stand from the chair, rearranging my stance",
+            [1] = "I now stand, rearranging my stance",
             [2] = "All"
         }
 
