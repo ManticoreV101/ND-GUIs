@@ -1,10 +1,10 @@
 local lib = loadstring(game:HttpGet "https://fluxteam.xyz/external-files/lib.lua")()
 local window = lib:CreateWindow("Robot Combat")
 window:AddButton(
-    "Load AP RSh-12",
+    "Load AP LI Baron",
     function()
         local args = {
-            [1] = "I'd push on the RSh-12's ammunition latch, flicking it open",
+            [1] = "I'd push on the Lazarus Int. Baron's ammunition latch, flicking it open",
             [2] = "All"
         }
 
@@ -106,45 +106,21 @@ window:AddButton(
         }
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        wait(2.5)
+        wait(2)
         local args = {
             [1] = "I'd take out a magnetic interlocking EMP",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        wait(2.5)
+        wait(2)
         local args = {
             [1] = "I'd charge up to them without hesitation",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        wait(2.5)
-        local args = {
-            [1] = "I'd now leap to their side, keeping my balance",
-            [2] = "All"
-        }
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        wait(3)
-        local args = {
-            [1] = "I latched my hand onto their neck to safeguard my landing",
-            [2] = "All"
-        }
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        wait(2.5)
-        local args = {
-            [1] = "I'd land onto their shoulders from behind",
-            [2] = "All"
-        }
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        wait(3)
+        wait(2)
         local args = {
             [1] = "I'd strap the EMP on them, which was ready to be triggered",
-            [2] = "All"
-        }
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        wait(2.5)
-        local args = {
-            [1] = "I'd leap back, landing on the floor",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
@@ -166,6 +142,12 @@ window:AddButton(
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
+        local args = {
+            [1] = "I'd activate the device in my pocket
+            [2] = "All"
+        }
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+        wait(2)
         local args = {
             [1] = "I'd take out a laser pointer, which was activated",
             [2] = "All"
