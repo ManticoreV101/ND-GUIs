@@ -52,7 +52,7 @@ window:AddButton(
         wait(2.3)
 
         local args = {
-            [1] = "The stab would penetrate far enough to sever your carotid artery and jugular vein",
+            [1] = "The stab would pierce far enough to sever your carotid artery and jugular vein",
             [2] = "All"
         }
 
@@ -401,56 +401,6 @@ window:AddButton(
         }
 
         game:GetService("ReplicatedStorage").Events.customizePlayer:InvokeServer(unpack(args))
-    end
-)
-
-local window = lib:CreateWindow("Stances")
-
-window:AddButton(
-    "Parallel",
-    function()
-        local args = {
-            [1] = "I'd form the Heiko Dachi stance wherein my feet were parallel and my center of gravity was balanced",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-    end
-)
-
-window:AddButton(
-    "Defensive",
-    function()
-        local args = {
-            [1] = "I'd form a defensive stance, keeping my palms open and my feet diagonal",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-    end
-)
-
-window:AddButton(
-    "Zenkutsu",
-    function()
-        local args = {
-            [1] = "I'd form the Zenkutsu Dachi stance, placing my hands just at waist level, and my legs in a steadfast position",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-    end
-)
-
-window:AddButton(
-    "Foundational",
-    function()
-        local args = {
-            [1] = "I'd form the Moto Daichi stance, placing my arms at chest level, and keeping my weight at my heels",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     end
 )
 
