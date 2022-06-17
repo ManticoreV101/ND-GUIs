@@ -970,28 +970,6 @@ window:AddButton(
     end
 )
 window:AddButton(
-    "Plunge Fingers Into Eyes",
-    function()
-        local args = {
-            [1] = "I'd plunge my fingers into your eyes, impaling you inside the occipital cavity",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-    end
-)
-window:AddButton(
-    "Rip Eyes Out",
-    function()
-        local args = {
-            [1] = "I'd rip your eyes out of your eyesockets",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-    end
-)
-window:AddButton(
     "Chokehold",
     function()
         local args = {
