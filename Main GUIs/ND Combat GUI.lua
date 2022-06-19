@@ -1,4 +1,4 @@
-local lib = loadstring(game:HttpGet "https://fluxteam.xyz/external-files/lib.lua")()
+local lib = loadstring(game:HttpGet "https://raw.githubusercontent.com/ManticoreV101/ND-GUIs/main/UI%20Library%20Backup.lua")()
 local window = lib:CreateWindow("Melee Combat")
 
 window:AddButton(
