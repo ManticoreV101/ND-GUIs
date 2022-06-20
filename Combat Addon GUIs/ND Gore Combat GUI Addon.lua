@@ -22,7 +22,7 @@ window:AddButton(
         wait(2)
 
         local args = {
-            [1] = "I'd press down, crushing your thyroid gland, and cutting your airflow"
+            [1] = "I'd press down, crushing your thyroid gland, and cutting your airflow",
             [2] = "All"
         }
 
