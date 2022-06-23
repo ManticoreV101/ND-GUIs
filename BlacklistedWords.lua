@@ -1,190 +1,190 @@
 return {
 	hack = {
 		"Scamming",
-		"he's advertising hacks (viruses)"
+		"Advertisement of 3rd party programs and cheats [Viruses]"
 	},
 	cheat = {
 		"Scamming",
-		"he's advertising hacks (viruses)"
+		"Advertisement of 3rd party programs and cheats [Viruses]"
 	},
 	exploit = {
 		"Scamming",
-		"he's advertising hacks (viruses)"
+		"Advertisement of 3rd party programs and cheats [Viruses]"
 	},
 	script = {
 		"Scamming",
-		"he's advertising hacks (viruses)"
+		"Advertisement of 3rd party programs and cheats [Viruses]"
 	},
 	fatherless = {
 		"Bullying",
-		"saying bad things about my parents"
+		"Implying that I do not have a father / Bullying"
 	},
 	motherless = {
 		"Bullying",
-		"saying bad things about my parents"
+		"Implying that I do not have a mother / Bullying"
 	},
 	parentless = {
 		"Bullying",
-		"saying bad things about my parents"
+		"Implying that I do not have partens / Bullying"
 	},
 	parents = {
 		"Bullying",
-		"saying bad things about my parents"
+		"Saying horrible things regarding my parents"
 	},
 	ez = {
 		"Bullying",
-		"saying rude things to me, i can't take it anymore, i've had a really bad year"
+		"Being rude in general / Bullying"
 	},
 	cancer = {
 		"Bullying",
-		"saying rude things to me, i can't take it anymore, i've had a really bad year"
+		"Being rude in general / Bullying"
 	},
 	kid = {
 		"Bullying",
-		"saying rude things to me, i can't take it anymore, i've had a really bad year"
+		"Being rude in general / Bullying"
 	},
 	bad = {
 		"Bullying",
-		"saying rude things to me, i can't take it anymore, i've had a really bad year"
+		"Being rude in general / Bullying"
 	},
 	["get a life"] = {
 		"Bullying",
-		"saying rude things to me, i can't take it anymore, i've had a really bad year"
+		"Being rude in general / Bullying"
 	},
 	noob = {
 		"Bullying",
-		"saying rude things to me, i can't take it anymore, i've had a really bad year"
+		"Being rude in general / Bullying"
 	},
 	mods = {
 		"Bullying",
-		"saying rude things to me, i can't take it anymore, i've had a really bad year"
+		"Being rude in general / Bullying"
 	},
 	gay = {
 		"Bullying",
-		"saying bad things about other people, bullying them"
+		"Being homophobic / Bullying"
 	},
 	gvae = {
 		"Bullying",
-		"saying bad things about other people, bullying them"
+		"Being homophobic / Bullying"
 	},
 	gae = {
 		"Bullying",
-		"saying bad things about other people, bullying them"
+		"Being homophobic / Bullying"
 	},
 	lgbt = {
 		"Bullying",
-		"saying bad things about other people, bullying them"
+		"Being homophobic / Bullying"
 	},
 	furr = {
 		"Bullying",
-		"saying bad things about other people, bullying them"
+		"Being rude in general / Bullying"
 	},
 	homo = {
 		"Bullying",
-		"saying bad things about other people, bullying them"
+		"Being homophobic / Bullying"
 	},
 	dumb = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	stupid = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	fat = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	ugly = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	kms = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Threatening to commit suicide / Harassment"
 	},
 	trash = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	suck = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	mad = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	bald = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	retard = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	cry = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	ratio = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	clown = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	["skill issue"] = {
 		"Bullying",
-		"this is really mean! i've had a really bad year, my dog passed out and i just can't take it anymore!"
+		"Being rude in general / Bullying"
 	},
 	white = {
 		"Bullying",
-		"He's racist!"
+		"Racism / Harassment"
 	},
 	black = {
 		"Bullying",
-		"He's racist!"
+		"Racism / Harassment"
 	},
 	asia = {
 		"Bullying",
-		"He's racist!"
+		"Racism / Harassment"
 	},
 	negr = {
 		"Bullying",
-		"He's racist!"
+		"Racism / Harassment"
 	},
 	love = {
 		"Dating",
-		"he's dating in roblox"
+		"Online dating / Breaking TOS"
 	},
 	gulp = {
 		"Dating",
-		"he's dating in roblox"
+		"Online dating / Breaking TOS"
 	},
 	["like you"] = {
 		"Dating",
-		"he's dating in roblox"
+		"Online dating / Breaking TOS"
 	},
 	russia = {
 		"Bullying",
-		"he talking about russia ukraine war"
+		"Talking about sensitive topics"
 	},
 	ukraine = {
 		"Bullying",
-		"he talking about russia ukraine war"
+		"Talking about sensitive topics"
 	},
 	war = {
 		"Bullying",
-		"he talking about russia ukraine war"
+		"Talking about sensitive topics"
 	},
 	cord = {
 		"Offsite Links",
-		"he offsite links"
+		"Redirecting to offsite platforms and links"
 	},
 	youtube = {
 		"Offsite Links",
-		"he offsite links"
+		"Redirecting to offsite platforms and links"
 	},
 };
