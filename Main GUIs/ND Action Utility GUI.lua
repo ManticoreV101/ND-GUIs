@@ -15,7 +15,7 @@ window:AddButton(
     "Walk To Person",
     function()
         local args = {
-            [1] = "I now advance towards them, reinvigorating my equanimity as I approach them",
+            [1] = "I now advance towards them, reinvigorating my composure as I approach them",
             [2] = "All"
         }
 
@@ -37,7 +37,7 @@ window:AddButton(
     "Turn",
     function()
         local args = {
-            [1] = "I'd swiftly turn around, glaring at them equanimously",
+            [1] = "I'd swiftly turn around, glaring at them",
             [2] = "All"
         }
 
