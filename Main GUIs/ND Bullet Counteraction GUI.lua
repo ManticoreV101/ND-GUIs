@@ -22,7 +22,7 @@ window:AddButton(
         wait(2)
 
         local args = {
-            [1] = "The accompanying compressed laminate sheets and artificially-coiled carbon-fiber muscle actuators reduce the kinetic shock to near zero"
+            [1] = "The accompanying compressed laminate sheets and artificially-coiled carbon-fiber muscle actuators reduce the kinetic shock to near zero",
             [2] = "All"
         }
 
