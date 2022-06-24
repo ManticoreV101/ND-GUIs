@@ -1,5 +1,5 @@
 local lib = loadstring(game:HttpGet "https://raw.githubusercontent.com/ManticoreV101/ND-GUIs/main/UI%20Library%20Backup.lua")()
-local window = lib:CreateWindow("Bullet Counteraction")
+local window = lib:CreateWindow("Bullet C-A")
 
 window:AddButton(
     "AP Round Head",
