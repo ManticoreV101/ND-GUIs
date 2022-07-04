@@ -2201,7 +2201,7 @@ btns:Button(
             [1] = "The transition back to the opening material at the end of both episodes incorporates a long dominant preparation, giving enough time for me to walk towards the table as the first of these transitions starts in F major, the key in which the first episode has ended.",
             [2] = "All"
         }
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))|
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     end
 )
 btns:Button(
@@ -2295,7 +2295,7 @@ btns:Button(
     "Order Drink",
     function()
         local args = {
-            [1] = `I now looked over to the barista, leaving in closer to the counter, digging my hand into the fabric slit on my suit. I would remove an E-Cash card. "I'll just take a glass of Oxy." I said in a phlegmatic tone. I nodded my head to the barkeep behind the counter.`,
+            [1] = 'I now looked over to the barista, leaving in closer to the counter, digging my hand into the fabric slit on my suit. I would remove an E-Cash card. "Just a glass of Oxy." I said in a phlegmatic tone. I nodded my head to the barkeep behind the counter.',
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
