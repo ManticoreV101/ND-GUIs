@@ -2275,7 +2275,7 @@ btns:Button(
     end
 )
 btns:Button(
-    "Enter Bar",
+    "Take Seat",
     function()
         local args = {
             [1] = "I walk towards the seat, reinstating my composure as I do so.",
@@ -2295,10 +2295,11 @@ btns:Button(
     "Order Drink",
     function()
         local args = {
-            [1] = 'I now looked over to the barista, leaving in closer to the counter, digging my hand into the fabric slit on my suit. I would remove an E-Cash card. "Just a glass of Oxy." I said in a phlegmatic tone. I nodded my head to the barkeep behind the counter.',
+            [1] = 'I now looked over to the barista, leaving in closer to the counter, digging my hand into the fabric slit on my suit. I would remove an E-Cash card. "Just a glass of Oxy." I said in a phlegmatic tone.',
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
         wait(4)
         local args = {
             [1] = "It was a quick exchange. My hand jolted up to the counter. Shortly afterward, I'd swipe my cash card. Before lodging it back into my pocket.",
