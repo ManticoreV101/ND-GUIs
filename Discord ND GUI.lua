@@ -2295,7 +2295,7 @@ btns:Button(
     "Order Drink",
     function()
         local args = {
-            [1] = 'I now looked over to the barista, leaving in closer to the counter, digging my hand into the fabric slit on my suit. I would remove an E-Cash card. "Just a glass of Oxy." I said in a phlegmatic tone.',
+            [1] = 'I now looked over to the barista, leaning in closer to the counter, digging my hand into the fabric slit on my suit. I would remove an E-Cash card. "Just a glass of Oxy." I said in a phlegmatic tone.',
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
