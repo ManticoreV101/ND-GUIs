@@ -1,4 +1,5 @@
-local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
 local win = DiscordLib:Window("Neon District GUI")
 
@@ -276,8 +277,8 @@ local btns = serv:Channel("Suit Control")
 btns:Button(
     "Animation",
     function()
- local Players = game:GetService("Players")
- local Animate = Players.LocalPlayer.Character.Animate
+        local Players = game:GetService("Players")
+        local Animate = Players.LocalPlayer.Character.Animate
         Animate.idle.Animation1.AnimationId = "rbxassetid://5319828216"
         Animate.idle.Animation2.AnimationId = "rbxassetid://5319831086"
         Animate.run.RunAnim.AnimationId = "rbxassetid://5319844329"
@@ -450,42 +451,42 @@ btns:Button(
             [1] = "I'd now drive its muzzle against your solar plexus, creating a semicircular laceration",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "I'd now fire rapidly, blasting the full clip into your torso",
             [2] = "All"
         }
-       
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "The ported barrel minimizes the muzzle flip and perceived recoil",
             [2] = "All"
         }
-       
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "The Gemtech Lunar-45 suppresses the muzzle blast",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
         local args = {
             [1] = "Your mesenteric artery gets struck by one of the shots, subsequently severing it",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "Your spinal column is ruptured by numerous of the rounds",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
         local args = {
@@ -551,42 +552,42 @@ btns:Button(
             [1] = "I'd now aim at your center mass",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(3)
         local args = {
             [1] = "I'd pull on the trigger, firing off 4 times, and sending 2 rounds into your infraclavicular region",
             [2] = "All"
         }
-       
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "The other 2 is sent into your pericardial cavity",
             [2] = "All"
         }
-       
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "Your coronary artery, brachial artery, and axillary artery is severed",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
         local args = {
             [1] = "You fall onto the ground as liquids develop in your pericardium",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "Due to the absence of blood supply towards your heart, you fail to circulate blood",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
         local args = {
@@ -653,42 +654,42 @@ btns:Button(
             [1] = "I'd now wrap my right arm around your neck",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(3)
         local args = {
             [1] = "I'd now ram the muzzle of the Lazarus Int. Baroness into your neck",
             [2] = "All"
         }
-       
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "I angle the muzzle towards the brain stem",
             [2] = "All"
         }
-       
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "I fire off, sending 3 rounds into the foundation of your skull",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
         local args = {
             [1] = "Your entire body is nulled as your brain stem is severed",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "The hydrostatic pressure of the round hitting the spinal fluid kills the brain",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     end
 )
@@ -749,42 +750,42 @@ btns:Button(
             [1] = "I'd now angle the barrel directly to your temporal region",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(3)
         local args = {
             [1] = "I'd now fire off, sending an electromagnetically assisted, duplex cartridge into your skull",
             [2] = "All"
         }
-       
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "The bullet shoves its way through your prefrontal cortex",
             [2] = "All"
         }
-       
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "Your tissues snap back toward the initial opening and overshoot their original position",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2.5)
         local args = {
             [1] = "The shockwave causes your tissue cavity to stretch and deform",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(2)
         local args = {
             [1] = "The kinetic force along with the rupture in your brain kills you instantly",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     end
 )
@@ -1893,7 +1894,7 @@ btns:Button(
         }
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        
+
         wait(2)
 
         local args = {
@@ -1931,7 +1932,7 @@ btns:Button(
         }
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        
+
         wait(2)
 
         local args = {
@@ -2065,12 +2066,10 @@ btns:Button(
 btns:Button(
     "Enter Hallway",
     function()
-
         local args = {
             [1] = "I strode over to the door, curling my fingers around the cold metallic handle before my palm made contact with it, then softly tugging on it to pave the way for me to step through.",
             [2] = "All"
         }
-        
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
@@ -2081,7 +2080,6 @@ btns:Button(
             [2] = "All"
         }
 
-
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
         wait(4)
@@ -2091,7 +2089,6 @@ btns:Button(
             [2] = "All"
         }
 
-
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
         wait(4)
@@ -2100,7 +2097,6 @@ btns:Button(
             [1] = "I made my way towards the decontamination chamber, hearing the continuous mild thuds again originating from my footsteps.",
             [2] = "All"
         }
-
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     end
@@ -2113,7 +2109,6 @@ btns:Button(
             [2] = "All"
         }
 
-
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
         wait(4)
@@ -2122,7 +2117,6 @@ btns:Button(
             [1] = "I tugged the card down in a whipping gesture, implanting it into the slit visible on the scanner. Upon scanning the card, a green hue appeared, indicating that it was valid.",
             [2] = "All"
         }
-
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
@@ -2133,7 +2127,6 @@ btns:Button(
             [2] = "All"
         }
 
-
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
         wait(4)
@@ -2142,7 +2135,6 @@ btns:Button(
             [1] = "I walk into the chamber, just before the chlorine dioxide gas and vapor phase hydrogen peroxide begin to disperse from the gas dispensers.",
             [2] = "All"
         }
-
 
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
@@ -2153,9 +2145,7 @@ btns:Button(
             [2] = "All"
         }
 
-
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        
     end
 )
 
@@ -2180,16 +2170,16 @@ btns:Button(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
     end
 )
-    
+
 btns:Button(
-            "Set Atmosphere",
-            function()
+    "Set Atmosphere",
+    function()
         local args = {
             [1] = "The atmosphere within the building was lively, as the sublime slowness of the string quintet movement filled the room.",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        
+
         wait(4)
         local args = {
             [1] = "Together with a similar use of pizzicato at various points, and with the same paradoxical effect: the pizzicato decorations of the main tune seem to enhance ambience within the room.",
@@ -2211,7 +2201,7 @@ btns:Button(
             [1] = "The nocturne then progresses by a series of modulations to the home key of E flat, anchored by a bass line descending largely by step, whilst I amass the Iberian Filet mignon onto the provided fork.",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(4)
         local args = {
@@ -2288,7 +2278,6 @@ btns:Button(
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        
     end
 )
 btns:Button(
@@ -2306,7 +2295,6 @@ btns:Button(
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-        
     end
 )
 btns:Button(
@@ -2316,7 +2304,7 @@ btns:Button(
             [1] = "I now picked the glass up, fastening my fingers around it in an arc, and bringing its rim closer to my mouth.",
             [2] = "All"
         }
-        
+
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(4)
         local args = {
