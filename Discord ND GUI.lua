@@ -2067,7 +2067,7 @@ btns:Button(
     function()
 
         local args = {
-            [1] = "I strode over to the door, curling my fingers around the cold metallic handle before my palm made contact with it, then softly tugging on it, as its hinge moved about, to pave the way for me to step through.",
+            [1] = "I strode over to the door, curling my fingers around the cold metallic handle before my palm made contact with it, then softly tugging on it to pave the way for me to step through.",
             [2] = "All"
         }
         
@@ -2208,7 +2208,7 @@ btns:Button(
     "Eat",
     function()
         local args = {
-            [1] = "The nocturne then progresses by a series of modulations to the home key of E flat, anchored by a bass line descending largely by step, whilst I amass the Iberico ham onto the provided fork.",
+            [1] = "The nocturne then progresses by a series of modulations to the home key of E flat, anchored by a bass line descending largely by step, whilst I amass the Iberian Filet mignon onto the provided fork.",
             [2] = "All"
         }
         
@@ -2221,13 +2221,13 @@ btns:Button(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(4)
         local args = {
-            [1] = "The truffle-butter-infused Japanese Wagyu beef topped with James Montgomery cheddar cheese, and Matsutake mushrooms on my dinner plate emits smoke upwards due to its sizzling state.",
+            [1] = "The truffle-butter-infused Japanese Wagyu beef topped with cheddar cheese, and Matsutake mushrooms on my dinner plate emits smoke upwards due to its sizzling state.",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(4)
         local args = {
-            [1] = "I now retract my mask marginally upwards as to enable me to dine on my course.",
+            [1] = "I now retract my mask marginally upwards as to enable me to dine on my meal.",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
@@ -2256,13 +2256,13 @@ btns:Button(
     "Enter Bar",
     function()
         local args = {
-            [1] = "I walked into the bar, one foot in front of the other in a smooth promenade0. My hand glided up in a gentle motion, fingers curled around the framework of my mask.",
+            [1] = "I walked into the bar, one foot in front of the other in a smooth promenade. My hand glided up in a gentle motion, fingers curled around the framework of my mask.",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(4)
         local args = {
-            [1] = "I drew the mask to the point where it was pushing up across the brim of my fedora, peering around the dimly lit bar. The lighting took on a hue of green and as such, they hummed with a faint buzz due to the poor-quality bulb type.",
+            [1] = "I drew the mask to the point where it was pushing up across the brim of my fedora. The lighting took on a hue of green and as such, they hummed with a faint buzz due to the poor-quality bulb type.",
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
