@@ -1,5 +1,6 @@
 # 💫About this repository:
-This is a collection of 🏙 Neon District 🏙 Utility and CRP GUIs I've made
+This is a collection of 🏙 Neon District 🏙 scripts that I've compiled for personal use
+These scripts include: 
 > - Main GUIs
 > - Addon GUIs
 > - Toggle GUIs
