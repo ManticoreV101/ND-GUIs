@@ -1,5 +1,5 @@
 # 💫About this repository:
-This is a collection of 🏙 Neon District 🏙 scripts that I've compiled for personal use
+This is a collection of 🏙 Neon District 🏙 scripts that I've compiled for personal use <br />
 These scripts include: 
 > - Main GUIs
 > - Addon GUIs
