@@ -411,7 +411,7 @@ btns:Button(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(4)
         local args = {
-            [1] = `I now looked over to the barista slipping my hand into the fabric slit on my suit. I would remove an E-Cash card. "I'll just take a mochaccino." I nodded my head to the barista behind the counter.`,
+            [1] = 'I now looked over to the barista slipping my hand into the fabric slit on my suit. I would remove an E-Cash card. "A mochachinno, please." I nodded my head to the barista behind the counter.',
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
@@ -457,7 +457,7 @@ btns:Button(
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
         wait(4)
         local args = {
-            [1] = `I now looked over to the barista slipping my hand into the fabric slit on my suit. I would remove an E-Cash card. "Black, two sugars, please." I extended my arm over to the counter.`,
+            [1] = 'I now looked over to the barista slipping my hand into the fabric slit on my suit. I would remove an E-Cash card. "Black, two sugars, please." I extended my arm over to the counter.',
             [2] = "All"
         }
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
